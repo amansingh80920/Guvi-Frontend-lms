@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Librarian | Library Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="grad">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#">Librarian</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto d-none d-lg-flex">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/home/home.html">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
+        <!-- Mobile Logout button -->
+        <div class="d-lg-none text-right p-2">
+            <a class="nav-link" href="/home/home.html">Logout</a>
+        </div>
+
+        <!-- Welcome Message and Book Addition Form -->
+        <div class="container">
+            <div class="jumbotron mt-5">
+                <h3 class="">Welcome, <span id="userName">User Name</span>!</h3>
+                <hr class="my-4">
+                <h2>Add a Book</h2>
+                <form id="bookForm" class="form-inline">
+                    <div class="form-group mb-2">
+                        <label for="bookId" class="sr-only">Book ID:</label>
+                        <input type="text" class="form-control" id="bookId" name="bookId" placeholder="Book ID" required>
+                    </div>
+                    <div class="form-group mx-sm-3 mb-2">
+                        <label for="bookName" class="sr-only">Book Name:</label>
+                        <input type="text" class="form-control" id="bookName" name="bookName" placeholder="Book Name" required>
+                    </div>
+                    <div class="form-group mx-sm-3 mb-2">
+                        <label for="studentName" class="sr-only">Student Name:</label>
+                        <input type="text" class="form-control" id="studentName" name="studentName" placeholder="Student Name" required>
+                    </div>
+                    <div class="form-group mx-sm-3 mb-2">
+                        <label for="courseName" class="sr-only">Course Name:</label>
+                        <input type="text" class="form-control" id="courseName" name="courseName" placeholder="Course Name" required>
+                    </div>
+                    <div class="form-group mx-sm-3 mb-2">
+                        <label for="issueDate" class="sr-only">Issue Date:</label>
+                        <input type="date" class="form-control" id="issueDate" name="issueDate" required>
+                    </div>
+                    <div class="form-group mx-sm-3 mb-2">
+                        <label for="returnDate" class="sr-only">Return Date:</label>
+                        <input type="date" class="form-control" id="returnDate" name="returnDate" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary mb-2">Issue Book</button>
+                </form>
+            </div>
+
+            <!-- Issued Books List -->
+            <div class="jumbotron mt-5">
+                <h2>Issued Books</h2>
+                <ul id="issuedBookList" class="list-group">
+                    <!-- Issued books will appear here -->
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

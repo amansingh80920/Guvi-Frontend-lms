@@ -1,0 +1,145 @@
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: 'Afacad Flux', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+nav {
+    padding: 1em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    margin: 2em;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+h3 {
+    font-size: 45px;
+    font-weight: 300;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form .form-group {
+    margin-bottom: 1em;
+}
+
+form button {
+    width: 150px;
+    padding: 0.5em;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 1em;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+ul#issuedBookList {
+    list-style: none;
+    padding: 0;
+}
+
+ul#issuedBookList li {
+    background-color: white;
+    margin-bottom: 1em;
+    padding: 1.5em;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+ul#issuedBookList li .book-info {
+    margin-right: 1em;
+    font-size: 16px;
+}
+
+ul#issuedBookList li .return-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+ul#issuedBookList li .return-btn:hover {
+    background-color: #218838;
+}
+
+.navbar-brand {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.grad {
+    min-height: 100vh;
+    background: linear-gradient(to right, white, #d5effc, #fcedf4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.jumbotron {
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 800px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+@media (max-width: 992px) {
+    .navbar-nav {
+        display: none;
+    }
+    .navbar-nav.d-lg-flex {
+        display: none;
+    }
+    .navbar-nav.d-lg-none {
+        display: flex;
+    }
+    .d-lg-none {
+        display: block !important;
+    }
+}
