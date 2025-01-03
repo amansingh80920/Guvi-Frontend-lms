@@ -1,109 +1,78 @@
-Library Management System
-This repository contains a web-based Library Management System that allows users to manage library operations efficiently. Below is a detailed overview of the project and its functionalities.
+Library Management System - Frontend Overview
+This is the frontend implementation of a Library Management System. The project provides users with an interface to:
 
-Table of Contents
-Project Overview
+1.Register and create an account.
+
+2.Log in using their email and password.
+
+3.Issue books by entering relevant details.
+
+The frontend is developed using HTML, CSS, and JavaScript.
 
 Features
+Home Page
+= Welcome interface with navigation options to Register and Login.
 
-Pages Description
+Register Section
+= Users can fill in their details to create a new account.
+
+=Fields include:
+
+1.Name
+
+2.Email
+
+3.Password
+
+Login Section
+= Users can log in using their registered email and password.
+
+Book Issue Interface
+= Once logged in, users can issue books by providing:
+
+1.Name
+
+2.Book Name
+
+3.Course
+
+4.Issue Date
+
+5.Expiry Date
 
 Technologies Used
+= HTML: Structure and content.
 
+= CSS: Styling and layout.
+
+= JavaScript: Interactivity and form validation.
+
+File Structure
+frontend/
+|
+|-- index.html        # Home page
+|-- register.html     # Registration page
+|-- login.html        # Login page
+|-- issue.html        # Book issue interface
+|
+|-- css/
+|   |-- style.css     # Styles for the project
+|
+|-- js/
+    |-- script.js     # Main JavaScript file
 How to Run
+= Clone the repository to your local machine.
 
-Screenshots
+- Open index.html in your preferred browser.
 
-Project Overview
-The Library Management System simplifies the process of managing library operations. It includes user registration, login, and book issuance functionalities. Users can register, log in, and manage their library accounts, including tracking issued books and their return dates.
+Future Enhancements
+= Adding form validations.
 
-Features
-Home page with options to register or log in.
+= Integrating with a backend for persistent data storage.
 
-User registration with fields for name, email, password, and password confirmation.
+= Adding a "Return Book" feature.
 
-Secure login system.
-
-Profile page to manage books:
-
-Add book details (Book ID, Book Name, Student Name, Course Name, Issue Date, Return Date).
-
-View a list of issued books with complete details.
-
-Pages Description
-1. Home Page
-Contains a welcome message.
-
-Provides Register and Login buttons to navigate to respective pages.
-
-2. Register Page
-Fields:
-
-Name
-
-Email address
-
-Password
-
-Confirm Password
-
-Upon successful registration, users can log in using their email and password.
-
-3. Login Page
-Fields:
-
-Email address
-
-Password
-
-Allows users to log in to their accounts.
-
-4. Profile Page
-Displays a welcome message with the user's name.
-
-Fields for book management:
-
-Book ID
-
-Book Name
-
-Student Name
-
-Course Name
-
-Issue Date
-
-Return Date
-
-Contains an "Issued Books" section displaying the details of all issued books, including:
-
-Book Name
-
-Book ID
-
-Student Name
-
-Course Name
-
-Issue Date
-
-Return Date
-
-Technologies Used:
+Author
+Developed by Anshuman.
 
 
-HTML: For structuring the web pages.
-
-CSS: For styling the pages.
-
-JavaScript: For client-side interactions.
-
-
-How to Run
-Clone the repository:
-
-git clone <repository-url>
-Navigate to the project directory:
-
-cd library-management-system
-Open the home.html file in your browser to start the application.
